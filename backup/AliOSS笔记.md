@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Lotus77770.github.io/LightPicker.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Lotus77770.github.io/LightPicker.github.io</link></image><lastBuildDate>Wed, 22 Apr 2026 16:54:17 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>AliOSS笔记</title><link>https://Lotus77770.github.io/LightPicker.github.io/post/AliOSS-bi-ji.html</link><description>- STS(安全凭证服务)
+- STS(安全凭证服务)
 生成一个临时的访问凭证，授权给临时用户或角色，使其能够在限定时间内访问指定的资源
 
 - RAM(资源允许管理)
@@ -15,6 +14,6 @@
   - [权限策略语法](https://help.aliyun.com/zh/ram/policy-structure-and-syntax?spm=5176.2020520153.console-base_help.dexternal.3b22336a4FrDDN#concept-srq-fbk-xdb)
 
 - 在使用SDK时([JAVA SDK.V1](https://help.aliyun.com/zh/oss/developer-reference/use-temporary-access-credentials-provided-by-sts-to-access-oss?spm=5176.8465980.console-base_help.dexternal.4e701450no1hN9))
-  - 细节上.比如policy中的Resource处&lt;region&gt;是'oss-cn-beijing',要在实际的地域前加上'oss-'
+  - 细节上.比如policy中的Resource处<region>是"oss-cn-beijing",要在实际的地域前加上"oss-"
   - JAVA中设置的policy和权限策略是交集关系,如果JAVA中不设置policy则默拥有这个权限策略的所有权限
-  - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误。</description><guid isPermaLink="true">https://Lotus77770.github.io/LightPicker.github.io/post/AliOSS-bi-ji.html</guid><pubDate>Wed, 22 Apr 2026 13:49:51 +0000</pubDate></item></channel></rss>
+  - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误
