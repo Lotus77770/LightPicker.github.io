@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Lotus77770.github.io/LightPicker.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Lotus77770.github.io/LightPicker.github.io</link></image><lastBuildDate>Thu, 23 Apr 2026 02:31:14 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>OSS鉴权流程</title><link>https://Lotus77770.github.io/LightPicker.github.io/post/OSS-jian-quan-liu-cheng.html</link><description>出自[阿里文档](https://help.aliyun.com/zh/oss/user-guide/oss-bucket-policy/?spm=5176.8466032.console-base_help.dexternal.5f9414507gpweO#d4302d7340pfj)
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Lotus77770.github.io/LightPicker.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Lotus77770.github.io/LightPicker.github.io</link></image><lastBuildDate>Tue, 28 Apr 2026 04:24:15 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>OSS鉴权流程</title><link>https://Lotus77770.github.io/LightPicker.github.io/post/OSS-jian-quan-liu-cheng.html</link><description>出自[阿里文档](https://help.aliyun.com/zh/oss/user-guide/oss-bucket-policy/?spm=5176.8466032.console-base_help.dexternal.5f9414507gpweO#d4302d7340pfj)
 
 - OSS鉴权遵循显式拒绝优先原则，按以下优先级顺序判断请求：
 
@@ -21,4 +21,11 @@
 - 在使用SDK时([JAVA SDK.V1](https://help.aliyun.com/zh/oss/developer-reference/use-temporary-access-credentials-provided-by-sts-to-access-oss?spm=5176.8465980.console-base_help.dexternal.4e701450no1hN9))
   - 细节上.比如policy中的Resource处&lt;region&gt;是'oss-cn-beijing',要在实际的地域前加上'oss-'
   - JAVA中设置的policy和权限策略是交集关系,如果JAVA中不设置policy则默拥有这个权限策略的所有权限
-  - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误。</description><guid isPermaLink="true">https://Lotus77770.github.io/LightPicker.github.io/post/AliOSS-bi-ji.html</guid><pubDate>Wed, 22 Apr 2026 13:49:51 +0000</pubDate></item></channel></rss>
+  - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误
+
+- 实际操作
+  
+
+  - 在使用阿里的JAVASDK去获取临时STS令牌时设置的policy就是角色的会话策略,和角色的策略取交集就是实际的策略
+
+&lt;img width='955' height='149' alt='Image' src='https://github.com/user-attachments/assets/058438a5-c775-4c2d-8ec6-dfdbdf723267' /&gt;。</description><guid isPermaLink="true">https://Lotus77770.github.io/LightPicker.github.io/post/AliOSS-bi-ji.html</guid><pubDate>Wed, 22 Apr 2026 13:49:51 +0000</pubDate></item></channel></rss>

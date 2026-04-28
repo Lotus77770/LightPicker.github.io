@@ -28,7 +28,14 @@
 - 在使用SDK时([JAVA SDK.V1](https://help.aliyun.com/zh/oss/developer-reference/use-temporary-access-credentials-provided-by-sts-to-access-oss?spm=5176.8465980.console-base_help.dexternal.4e701450no1hN9))
   - 细节上.比如policy中的Resource处<region>是'oss-cn-beijing',要在实际的地域前加上'oss-'
   - JAVA中设置的policy和权限策略是交集关系,如果JAVA中不设置policy则默拥有这个权限策略的所有权限
-  - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误。">
+  - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误
+
+- 实际操作
+  
+
+  - 在使用阿里的JAVASDK去获取临时STS令牌时设置的policy就是角色的会话策略,和角色的策略取交集就是实际的策略
+
+<img width='955' height='149' alt='Image' src='https://github.com/user-attachments/assets/058438a5-c775-4c2d-8ec6-dfdbdf723267' />。">
 <meta property="og:title" content="AliOSS笔记">
 <meta property="og:description" content="- STS(安全凭证服务)
 生成一个临时的访问凭证，授权给临时用户或角色，使其能够在限定时间内访问指定的资源
@@ -48,7 +55,14 @@
 - 在使用SDK时([JAVA SDK.V1](https://help.aliyun.com/zh/oss/developer-reference/use-temporary-access-credentials-provided-by-sts-to-access-oss?spm=5176.8465980.console-base_help.dexternal.4e701450no1hN9))
   - 细节上.比如policy中的Resource处<region>是'oss-cn-beijing',要在实际的地域前加上'oss-'
   - JAVA中设置的policy和权限策略是交集关系,如果JAVA中不设置policy则默拥有这个权限策略的所有权限
-  - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误。">
+  - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误
+
+- 实际操作
+  
+
+  - 在使用阿里的JAVASDK去获取临时STS令牌时设置的policy就是角色的会话策略,和角色的策略取交集就是实际的策略
+
+<img width='955' height='149' alt='Image' src='https://github.com/user-attachments/assets/058438a5-c775-4c2d-8ec6-dfdbdf723267' />。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://Lotus77770.github.io/LightPicker.github.io/post/AliOSS-bi-ji.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
@@ -146,7 +160,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误</li>
 </ul>
 </li>
-</ul></div>
+<li>
+<p>实际操作</p>
+<ul>
+<li>在使用阿里的JAVASDK去获取临时STS令牌时设置的policy就是角色的会话策略,和角色的策略取交集就是实际的策略</li>
+</ul>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/058438a5-c775-4c2d-8ec6-dfdbdf723267"><img width="955" height="149" alt="Image" src="https://github.com/user-attachments/assets/058438a5-c775-4c2d-8ec6-dfdbdf723267" style="max-width: 100%; height: auto; max-height: 149px;; aspect-ratio: 955 / 149; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

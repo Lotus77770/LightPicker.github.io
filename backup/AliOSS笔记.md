@@ -17,3 +17,10 @@
   - 细节上.比如policy中的Resource处<region>是"oss-cn-beijing",要在实际的地域前加上"oss-"
   - JAVA中设置的policy和权限策略是交集关系,如果JAVA中不设置policy则默拥有这个权限策略的所有权限
   - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误
+
+- 实际操作
+  
+
+  - 在使用阿里的JAVASDK去获取临时STS令牌时设置的policy就是角色的会话策略,和角色的策略取交集就是实际的策略
+
+<img width="955" height="149" alt="Image" src="https://github.com/user-attachments/assets/058438a5-c775-4c2d-8ec6-dfdbdf723267" />
