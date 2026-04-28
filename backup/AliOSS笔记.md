@@ -10,6 +10,10 @@
   - [角色](https://help.aliyun.com/zh/ram/user-guide/ram-role-overview?spm=5176.2020520153.console-base_help.dexternal.3b22336a4FrDDN):可以获得权限策略,当用户或角色扮演它时权限切换.
     - 可信实体:我的用法是在请求STS时需要一个可信实体(ARM中的用户或角色等),即请求STS时要求的一个用户. 
     - 角色链:当扮演角色后还可以继续扮演其他角色(权限是切换的).用途是通过设置信任策略可以清晰的提升权限.
+    - 信任策略:是角色用于筛序那些可信任的实体是可以扮演它的,例如:[角色,用户,账号本身等](https://help.aliyun.com/zh/ram/user-guide/ram-role-overview?spm=5176.2020520153.console-base_help.dexternal.211e336arTNju2#section-f2y-k4d-nfb)
+
+<img width="793" height="443" alt="Image" src="https://github.com/user-attachments/assets/ba928619-cd92-4c82-b920-57a215015b3e" />
+
 - 权限策略:一组的权限的集合,可以被角色好用户使用
   - [权限策略语法](https://help.aliyun.com/zh/ram/policy-structure-and-syntax?spm=5176.2020520153.console-base_help.dexternal.3b22336a4FrDDN#concept-srq-fbk-xdb)
 
@@ -18,7 +22,7 @@
   - JAVA中设置的policy和权限策略是交集关系,如果JAVA中不设置policy则默拥有这个权限策略的所有权限
   - 不设置policy不代表用String的空字符串,而是null.如果用空字符串会提示语法错误
 
-- 实际操作
+- 实际操作要注意
   
 
   - 在使用阿里的JAVASDK去获取临时STS令牌时设置的policy就是角色的会话策略,和角色的策略取交集就是实际的策略
