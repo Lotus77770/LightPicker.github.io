@@ -1,5 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Lotus77770.github.io/LightPicker.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Lotus77770.github.io/LightPicker.github.io</link></image><lastBuildDate>Tue, 28 Apr 2026 11:07:44 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>RAG流程</title><link>https://Lotus77770.github.io/LightPicker.github.io/post/RAG-liu-cheng.html</link><description>截图来源b站[马克的技术工作坊](https://space.bilibili.com/1815948385/?spm_id_from=333.788.upinfo.detail.click)
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Lotus77770.github.io/LightPicker.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Lotus77770.github.io/LightPicker.github.io</link></image><lastBuildDate>Tue, 28 Apr 2026 13:21:41 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>在Dify中配置简单的RAG</title><link>https://Lotus77770.github.io/LightPicker.github.io/post/zai-Dify-zhong-pei-zhi-jian-dan-de-RAG.html</link><description>Dify中包含可视化AI工作流编排.
+
+&lt;img width='1369' height='456' alt='Image' src='https://github.com/user-attachments/assets/01c11745-7557-4498-bdb5-282f462143b3' /&gt;
+
+打开知识检索模块.
+&lt;img width='495' height='808' alt='Image' src='https://github.com/user-attachments/assets/85ad6489-985e-443c-a6f8-69b2c1104167' /&gt;
+在知识库栏添加知识库.或在网页头部的知识库页配置新知识库
+
+&lt;img width='1896' height='79' alt='Image' src='https://github.com/user-attachments/assets/a61d94dc-33d7-438b-87ce-21e5c03d499b' /&gt;
+进入知识库页后,新建
+&lt;img width='1173' height='409' alt='Image' src='https://github.com/user-attachments/assets/33896a13-b068-45b3-9d51-1c7d0c868b54' /&gt;
+导入文本后,有分段设置好索引方式的选择.
+
+&lt;img width='831' height='400' alt='Image' src='https://github.com/user-attachments/assets/70f154f7-3007-4729-a011-d3f0426defb3' /&gt;
+我分段是没有设置,因为是测试,实际生产中根据资料情况调整.
+之后索引方式有:
+
+  - 高质量(Vector模式):用Embedding 模型将分页或问题向量化,然后重排用的Rerank 模型.
+  - 经济(Keyword模式):用的倒排索引,区别于用向量数据库的(即上面的高质量中),不支持语意搜索.
+
+&lt;img width='856' height='170' alt='Image' src='https://github.com/user-attachments/assets/3f6a4a4d-f8ab-4b25-9eb3-479cc98ae447' /&gt;
+
+之后保存并处理,等待处理完成就可以添加到工作流的知识检索模块了.
+。</description><guid isPermaLink="true">https://Lotus77770.github.io/LightPicker.github.io/post/zai-Dify-zhong-pei-zhi-jian-dan-de-RAG.html</guid><pubDate>Tue, 28 Apr 2026 13:21:10 +0000</pubDate></item><item><title>RAG流程</title><link>https://Lotus77770.github.io/LightPicker.github.io/post/RAG-liu-cheng.html</link><description>截图来源b站[马克的技术工作坊](https://space.bilibili.com/1815948385/?spm_id_from=333.788.upinfo.detail.click)
 
 RAG（检索增强生成）是一种AI技术，通过检索外部知识库信息来增强大语言模型的生成能力，提高回答准确性和时效性。</description><guid isPermaLink="true">https://Lotus77770.github.io/LightPicker.github.io/post/RAG-liu-cheng.html</guid><pubDate>Tue, 28 Apr 2026 10:54:26 +0000</pubDate></item><item><title>OSS鉴权流程</title><link>https://Lotus77770.github.io/LightPicker.github.io/post/OSS-jian-quan-liu-cheng.html</link><description>出自[阿里文档](https://help.aliyun.com/zh/oss/user-guide/oss-bucket-policy/?spm=5176.8466032.console-base_help.dexternal.5f9414507gpweO#d4302d7340pfj)
 
