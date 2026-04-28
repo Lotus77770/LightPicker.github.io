@@ -16,7 +16,7 @@ RAG（检索增强生成）是一种AI技术，通过检索外部知识库信息
 
 - 用户提问后(实际使用阶段):
   1.   先将用户提问通过Embedding向量化.
-  2.   在向量数据库中召回.
+  2.   在向量数据库中召回(也可以叫检索).
 <img width="930" height="490" alt="Image" src="https://github.com/user-attachments/assets/67e37d7d-834e-4474-8658-f45cd02d70c8" />
 
 
