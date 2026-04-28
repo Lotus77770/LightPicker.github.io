@@ -1,3 +1,5 @@
+截图来源b站[马克的技术工作坊](https://space.bilibili.com/1815948385/?spm_id_from=333.788.upinfo.detail.click)
+
 RAG（检索增强生成）是一种AI技术，通过检索外部知识库信息来增强大语言模型的生成能力，提高回答准确性和时效性。
 
 有两个流程
